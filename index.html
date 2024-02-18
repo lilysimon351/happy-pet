@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Pet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- HERO start -->
+    <div class="hero">
+      <div class="container">
+        <header class="header flex-bt-center">
+          <a class="logo" href="#">
+            <img
+              src="img/logo.svg"
+              alt="логотип Happy pet"
+              width="185"
+              height="50"
+            />
+          </a>
+          <nav class="header__nav flex-bt-center">
+            <a href="#" class="active">Главная</a>
+            <a href="#">Друзья</a>
+            <a href="#">О сервисе</a>
+            <a href="#">Контакты</a>
+          </nav>
+          <div class="header__group flex-bt-center">
+            <a href="tel:79686582376" class="phone">+7 968 658-23-76</a>
+            <div class="basket flex-bt-center" role="button">
+              <p class="basket__price">
+                <span class="basket__price_num">9 765 </span>
+                р.
+              </p>
+              <div class="basket__dropdown"></div>
+            </div>
+          </div>
+        </header>
+        <div class="hero__offer">
+          <h1 class="main_title">Твой новый друг с&nbsp;доставкой на дом</h1>
+          <p class="descriptor">
+            онлайн-магазин домашних <br />
+            животных подарит тебе нового друга <br />
+            в несколько кликов. Действуй!
+          </p>
+          <button class="hero__offer_btn" type="button">
+            посмотреть друзей
+          </button>
+        </div>
+        <div class="hero__slider">
+          <!-- If we need navigation buttons -->
+          <div class="hero__slider_prev swiper-button-prev"></div>
+          <div class="hero__slider_next swiper-button-next"></div>
+          <!-- Slider main container -->
+          <div class="hero__slider_box swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a href="#" class="hero__slider_link">
+                  <span class="hero__slider_title orange-title">Собаки</span>
+                  <img src="img/hero-slide-1.png" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="hero__slider_link">
+                  <span class="hero__slider_title green-title">Коты</span>
+                  <img src="img/hero-slide-2.png" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="hero__slider_link">
+                  <span class="hero__slider_title green-title">Коты</span>
+                  <img src="img/hero-slide-2.png" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="hero__slider_link">
+                  <span class="hero__slider_title green-title">Коты</span>
+                  <img src="img/hero-slide-2.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <!-- If we need scrollbar -->
+            <div class="hero__slider_scrollbar swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- HERO end -->
+
+    <main>
+      <!-- TRUST start -->
+      <section class="trust">
+        <div class="container">
+          <h2 class="trust__title title">Почему выбирают наших друзей</h2>
+          <ul class="trust__list">
+            <li class="trust__item">
+              <p class="trust__item-header">Их много</p>
+              <p class="trust__item-detail">
+                Огромный выбор животных, птиц и питомцев
+              </p>
+            </li>
+            <li class="trust__item">
+              <p class="trust__item-header">Они здоровы</p>
+              <p class="trust__item-detail">
+                Мы заботимся о каждом питомце, который с нами
+              </p>
+            </li>
+            <li class="trust__item">
+              <p class="trust__item-header">Их любят</p>
+              <p class="trust__item-detail">
+                Мы окружаем любовью и вниманием наших друзей
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- TRUST end -->
+
+      <!-- CATALOG start -->
+      <section class="catalog">
+        <div class="container">
+          <h2 class="catalog__title title">Каталог животных</h2>
+          <ul class="catalog__cat-list">
+            <li class="catalog__cat-item active">Все</li>
+            <li class="catalog__cat-item">Собаки</li>
+            <li class="catalog__cat-item">Кошки</li>
+            <li class="catalog__cat-item">Попугаи</li>
+            <li class="catalog__cat-item">Хомяки</li>
+            <li class="catalog__cat-item">Обезьяны</li>
+            <li class="catalog__cat-item">Кролики</li>
+          </ul>
+          <div class="catalog__slider-wr">
+            <!-- If we need navigation buttons -->
+            <div class="catalog__slider_prev swiper-button-prev"></div>
+            <div class="catalog__slider_next swiper-button-next"></div>
+            <!-- Slider main container -->
+            <div class="catalog__slider swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide catalog__item">
+                  <div class="catalog__item-header">
+                    <div class="feature"><span class="num">4</span> месяца</div>
+                    <div class="feature"><span class="num">2</span> награды</div>
+                  </div>
+                  <div class="catalog__item-body">
+                    <div class="catalog__item-img">
+                      <img src="img/catalog-slide-1.png" alt="" />
+                    </div>
+                    <h3>
+                      <a href="#" class="catalog__item-link"> Доберман </a>
+                    </h3>
+                    <p>Отличный новый друг для всей семьи, охраняет и обожает</p>
+                  </div>
+                  <ul class="catalog__item-cats">
+                    <li class="catalog__item-category">СОБАКА</li>
+                    <li class="catalog__item-category">ХИЩНИК</li>
+                  </ul>
+                  <div class="catalog__item-footer">
+                    <p class="catalog__item-price"><span>7 200</span> р.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide catalog__item">
+                  <div class="catalog__item-header">
+                    <div class="feature"><span class="num">7</span> месяца</div>
+                    <div class="feature"><span class="num">3</span> награды</div>
+                  </div>
+                  <div class="catalog__item-body">
+                    <div class="catalog__item-img">
+                      <img src="img/catalog-slide-2.png" alt="" />
+                    </div>
+                    <h3>
+                      <a href="#" class="catalog__item-link">
+                        Британская кошка
+                      </a>
+                    </h3>
+                    <p>Прекрасная подруга на дождливые серые времена</p>
+                  </div>
+                  <ul class="catalog__item-cats">
+                    <li class="catalog__item-category">КОШКА</li>
+                    <li class="catalog__item-category">МЫШКОЕДНАЯ</li>
+                  </ul>
+                  <div class="catalog__item-footer">
+                    <p class="catalog__item-price"><span>5 900</span> р.</p>
+                  </div>
+                </div>
+  
+                <div class="swiper-slide catalog__item">
+                  <div class="catalog__item-header">
+                    <div class="feature"><span class="num">2</span> месяца</div>
+                    <div class="feature"><span class="num">1</span> награды</div>
+                  </div>
+                  <div class="catalog__item-body">
+                    <div class="catalog__item-img">
+                      <img src="img/catalog-slide-3.png" alt="" />
+                    </div>
+                    <h3>
+                      <a href="#" class="catalog__item-link">
+                        Кролик вислоухий
+                      </a>
+                    </h3>
+                    <p>Отличный новый друг для всей семьи, охраняет и обожает</p>
+                  </div>
+                  <ul class="catalog__item-cats">
+                    <li class="catalog__item-category">КРОЛИК</li>
+                    <li class="catalog__item-category">ТРАВОЯДНЫЙ</li>
+                  </ul>
+                  <div class="catalog__item-footer">
+                    <p class="catalog__item-price"><span>3 100</span> р.</p>
+                  </div>
+                </div>
+  
+                <div class="swiper-slide catalog__item">
+                  <div class="catalog__item-header">
+                    <div class="feature"><span class="num">4</span> месяца</div>
+                    <div class="feature"><span class="num">2</span> награды</div>
+                  </div>
+                  <div class="catalog__item-body">
+                    <div class="catalog__item-img">
+                      <img src="img/catalog-slide-3.png" alt="" />
+                    </div>
+                    <h3>
+                      <a href="#" class="catalog__item-link"> Доберман </a>
+                    </h3>
+                    <p>Отличный новый друг для всей семьи, охраняет и обожает</p>
+                  </div>
+                  <ul class="catalog__item-cats">
+                    <li class="catalog__item-category">СОБАКА</li>
+                    <li class="catalog__item-category">ХИЩНИК</li>
+                  </ul>
+                  <div class="catalog__item-footer">
+                    <p class="catalog__item-price"><span>7 200</span> р.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="catalog__slider_pag swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CATALOG end -->
+      <!-- GALLERY start -->
+      <section class="gallery">
+        <div class="container">
+          <h2 class="gallery__title title">Мы любим играть </h2>
+          <div class="gallery__list">
+            <figure class="gallery__item">
+              <img src="img/gallery-item-1.jpg" alt="">
+            </figure>
+            <figure class="gallery__item">
+              <img src="img/gallery-item-2.jpg" alt="">
+            </figure>
+            <figure class="gallery__item">
+              <img src="img/gallery-item-3.jpg" alt="">
+            </figure>
+            <figure class="gallery__item">
+              <img src="img/gallery-item-4.jpg" alt="">
+            </figure>
+            <figure class="gallery__item">
+              <img src="img/gallery-item-5.jpg" alt="">
+            </figure>
+            <figure class="gallery__item">
+              <img src="img/gallery-item-6.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- GALLERY end -->
+      <!-- ABOUT start -->
+      <section class="about">
+        <div class="container">
+          <h2 class="about__title title">О питомнике Happy Pet</h2>
+          <div class="about__cont">
+            <h3>Мы - команда мечтателей</h3>
+            <p>Мы являемся некоммерческой организацией, посвященной защите и уходу за бездомными животными.</p>
+            <p>Наши ценности основаны на заботе, сострадании и любви к животным. Мы стараемся предоставить каждому животному комфортные условия проживания, полноценное питание и медицинское обслуживание. Наша команда профессионалов и добровольцев работает напряженно, чтобы каждое животное получило соответствующий уход и внимание, пока мы не найдем для них дом, где им будет окружено нежностью и заботой.</p>
+          </div>
+          <a href="#" class="read-more orange-title">читать больше</a>
+          <div class="about__img">
+            <img src="img/about-bg.png" alt="">
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT end -->
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <form action="" class="ques-form">
+          <h2 class="ques-form__title title">Есть вопросы? Задавайте!</h2>
+          <div class="ques-form__group">
+            <input type="text" class="input_name" placeholder="Введите имя">
+            <input type="email" class="input_email" placeholder="Введите E-mail">
+            <input type="phone" class="input_phone" placeholder="Введите телефон">
+            <select name="" id="" class="select_subject">
+              <option value="" selected>Тема вопроса</option>
+              <option value="" selected>Тема вопроса 2</option>
+              <option value="" selected>Тема вопроса 3</option>
+            </select>
+            <textarea name="" id="" cols="30" rows="6" class="message" placeholder="Введите сообщение"></textarea>
+          </div>
+          <div class="ques-form__policy">
+              <label class="ques-form__policy-item">
+                <input type="checkbox" name="" id="" class="ques-form__check">
+                <span>я согласен на обработку персональных данных</span>
+              </label>
+              <label class="ques-form__policy-item">
+                <input type="checkbox" name="" id="" class="ques-form__check">
+                <span>я согласен с лицензией конфиденциальности</span>
+              </label>
+          </div>
+          <button type="submit" class="ques-form__send">
+            отправить
+          </button>
+        </form>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
